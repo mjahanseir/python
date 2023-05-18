@@ -235,17 +235,37 @@ if not queue:
     print("Empty")
 print("***********         15        ***********")
 #                     15- Tuples
+point = (1, 2)+(3, 4)
+print(type(point))
+print(point)
 
+points = (1, 2)*3
+print(type(points))
+print(points)
 
+poin = tuple([1, 2])
+print(poin)
+
+poins = tuple("Hello world")
+print(poins)
+print(poins[3:10])
+# a, b, c = point
+if 10 in points:
+    print("Exist")
+
+print("***********         16        ***********")
 #                     16- Swapping Variables (2:37)
 
 
+print("***********         17        ***********")
 #                     17- Arrays (3:11)
 
 
+print("***********         18        ***********")
 #                     18- Sets (4:03)
 
 
+print("***********         19        ***********")
 #                     19- Dictionaries (5:24)
 
 
