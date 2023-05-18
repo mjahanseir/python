@@ -1,4 +1,5 @@
 #                     1- Lists
+from collections import deque
 letter = ["a", "b", "c"]
 matrix = [[0, 1], [2, 3]]
 zeros = [0]*5
@@ -198,6 +199,7 @@ print(list(zip("abc", list1, list2)))
 
 print("***********         13        ***********")
 #                     13- Stacks
+# LIFO
 browsing_session = []
 browsing_session.append(1)
 browsing_session.append(2)
@@ -218,8 +220,19 @@ if not browsing_session:
 
 print("***********         14        ***********")
 #                     14- Queues
+# FIFO
+[1, 2, 3]
 
+queue = deque([])
 
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.popleft()
+print(queue)
+
+if not queue:
+    print("Empty")
 print("***********         15        ***********")
 #                     15- Tuples
 
