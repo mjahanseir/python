@@ -106,14 +106,51 @@ print(lt)
 
 print("***********         6         ***********")
 #                     6- Finding Items
+print(letters.index('d'))
+if 'm' in letters:
+    print(letters.index('m'))
 
 
+print("***********         7         ***********")
 #                     7- Sorting Lists
+myNums = [3, 51, 2, 8, 6]
+print(myNums)
+
+myNums.sort()
+print(myNums)
 
 
+myNums.sort(reverse=True)
+print(myNums)
+
+print(sorted(myNums, reverse=True))
+print(myNums)
+
+items = [
+    ("Product1", 10),
+    ("Product2", 20),
+    ("Product3", 30),
+]
+items.sort()
+print(items)
+
+
+def sort_item(item):
+    return item[1]
+
+
+items.sort(key=sort_item)
+print(items)
+
+print("***********         8        ***********")
 #                     8- Lambda Functions
 
 
+items.sort(key=lambda item: item[1])
+print(items)
+
+
+print("***********         9        ***********")
 #                     9- Map Function
 
 
