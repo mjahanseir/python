@@ -163,31 +163,64 @@ for item in item:
 print(prices)
 
 
-x = list(map(lambda item: item[1], items))
-print(x)
+prices = list(map(lambda item: item[1], items))
+print(prices)
 # for item in x:
 #     print(item)
 
 
 print("***********         10        ***********")
 #                     10- Filter Function
-x = list(filter(lambda item: item[1] >= 10, items))
-print(x)
+filtered = list(filter(lambda item: item[1] >= 10, items))
+print(filtered)
 
 
 print("***********         11        ***********")
 #                     11- List Comprehensions
 
+preice = [item[1] for item in items]
+print(preice)
 
+# filtr=[expression for item in items]
+filtr = [item for item in items if item[1] >= 10]
+print(filtr)
+
+
+print("***********         12        ***********")
 #                     12- Zip Function
+list1 = [1, 2, 3]
+list2 = [10, 20, 30]
+
+[(1, 10), (2, 20), (3, 30)]
+
+print(list(zip("abc", list1, list2)))
 
 
+print("***********         13        ***********")
 #                     13- Stacks
+browsing_session = []
+browsing_session.append(1)
+browsing_session.append(2)
+browsing_session.append(3)
+
+print(browsing_session)
+last = browsing_session.pop()
+print(last)
+
+print(browsing_session)
+
+if not browsing_session:
+    print("Redirect", browsing_session[-1])
+
+if not browsing_session:
+    print("disabled")
 
 
+print("***********         14        ***********")
 #                     14- Queues
 
 
+print("***********         15        ***********")
 #                     15- Tuples
 
 
