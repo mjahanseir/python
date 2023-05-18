@@ -1,7 +1,8 @@
 # Python Mastery
 
 ###content
-        1- Getting Started
+        - 1- Getting Started
+        - 2- Primitive Types
         3- Control Flow
         4- Functions
         5- Data Structures
