@@ -1,4 +1,5 @@
 #                     1- Lists
+from array import array
 from collections import deque
 letter = ["a", "b", "c"]
 matrix = [[0, 1], [2, 3]]
@@ -255,10 +256,30 @@ if 10 in points:
 
 print("***********         16        ***********")
 #                     16- Swapping Variables (2:37)
+m = 10
+n = 11
+
+
+def swap(a, b):
+    c = a
+    a = b
+    c = b
+    return a, b
+
+
+print(m, n)
+print(swap(m, n))
+
+print(m, n)
+m, n = n, m
+print(m, n)
 
 
 print("***********         17        ***********")
 #                     17- Arrays (3:11)
+numbers = array("i", [1, 2, 3])
+numbers.insert(4)
+# numbers[0]=1.0
 
 
 print("***********         18        ***********")
