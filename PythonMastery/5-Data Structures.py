@@ -145,18 +145,37 @@ print(items)
 print("***********         8        ***********")
 #                     8- Lambda Functions
 
-
 items.sort(key=lambda item: item[1])
 print(items)
-
 
 print("***********         9        ***********")
 #                     9- Map Function
 
+item = [
+    ("Product1", 10),
+    ("Product2", 9),
+    ("Product3", 12),
+]
 
+prices = []
+for item in item:
+    prices.append(item[1])
+print(prices)
+
+
+x = list(map(lambda item: item[1], items))
+print(x)
+# for item in x:
+#     print(item)
+
+
+print("***********         10        ***********")
 #                     10- Filter Function
+x = list(filter(lambda item: item[1] >= 10, items))
+print(x)
 
 
+print("***********         11        ***********")
 #                     11- List Comprehensions
 
 
@@ -173,10 +192,24 @@ print("***********         9        ***********")
 
 
 #                     16- Swapping Variables (2:37)
+
+
 #                     17- Arrays (3:11)
+
+
 #                     18- Sets (4:03)
+
+
 #                     19- Dictionaries (5:24)
+
+
 #                     20- Dictionary Comprehensions (3:19)
+
+
 #                     21- Generator Expressions (3:51)
+
+
 #                     22- Unpacking Operator (4:05)
+
+
 #                     23- Exercise (6:21)
