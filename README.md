@@ -1,6 +1,6 @@
 # Python Mastery
 
-###content
+### content
         1- Getting Started
         2- Primitive Types
         3- Control Flow
